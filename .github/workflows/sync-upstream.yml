@@ -32,12 +32,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Synchronize main
-        run: |
-          git checkout main
-          git merge --no-edit upstream/main
-          git push origin main
-
+     
       - name: Synchronize all other branches
         shell: bash
         run: |
