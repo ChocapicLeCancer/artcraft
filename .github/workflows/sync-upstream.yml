@@ -22,7 +22,7 @@ jobs:
           token: ${{ secrets.SYNC_TOKEN }}
       - name: Fetch upstream branches and tags
         run: |
-          git remote add upstream https://github.com/storytold/vectorcraft.git
+          git remote add upstream https://github.com/storytold/artcraft.git
           git fetch upstream \
             "+refs/heads/*:refs/remotes/upstream/*" \
             "+refs/tags/*:refs/upstream/tags/*"
